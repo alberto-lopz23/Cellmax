@@ -23,28 +23,55 @@ const chatRespuestas = {
         respuesta: '¡A la orden! 👍 ¿Hay algo más en lo que te pueda colaborar hoy?'
     },
     cambios: {
-        keywords: ['cambio', 'reciben', 'recibes', 'tomar', 'como parte de pago', 'usado como pago'],
+        keywords: ['cambio', 'reciben', 'recibes', 'tomar', 'como parte de pago', 'usado como pago', 'permuta'],
         respuesta: '¡Claro que sí! 🔄 Evaluamos tu teléfono actual para que lo uses como parte de pago de tu nuevo equipo. Nos traes el móvil o nos mandas fotos, evaluamos pantalla/batería en 15 minutos y te damos el saldo a favor.'
     },
     delivery: {
-        keywords: ['delivery', 'envio', 'mandar', 'domicilio', 'interior', 'pueblo', 'enviar'],
-        respuesta: '🚀 <b>¡Hacemos envíos a todas partes!</b><br>• <b>Santo Domingo:</b> Delivery express en menos de 2 horas.<br>• <b>Provincias/Interior:</b> Envío asegurado por la agencia de tu preferencia (Metro Pac, Caribe Pack, etc.) directo a tu localidad.'
+        keywords: ['delivery', 'envio', 'mandar', 'domicilio', 'interior', 'pueblo', 'enviar', 'motoconcho', 'transporte'],
+        respuesta: '🚀 <b>¡Hacemos envíos a todas partes!</b><br>• <b>Santo Domingo:</b> Delivery express en menos de 2 horas (costo varía según la zona).<br>• <b>Provincias/Interior:</b> Envío asegurado por la agencia de tu preferencia (Metro Pac, Caribe Pack, Aptra, etc.) directo a tu localidad.'
     },
     ubicacion: {
-        keywords: ['donde', 'ubicacion', 'direccion', 'tienda', 'local', 'sucursal', 'estan', 'ubicados'],
-        respuesta: '📍 <b>Nuestra Tienda Física:</b><br>Estamos ubicados en la <b>Av. 27 de Febrero</b>, Santo Domingo.<br><br>🕒 <b>Horario:</b> Lunes a Sábado de 9:00 AM a 7:30 PM.<br>🛒 ¡También puedes comprar online con envío rápido!'
+        keywords: ['donde', 'ubicacion', 'direccion', 'tienda', 'local', 'sucursal', 'estan', 'ubicados', 'waze', 'maps'],
+        respuesta: '📍 <b>Nuestra Tienda Física:</b><br>Estamos ubicados en la <b>Av. 27 de Febrero</b>, casi esquina Lincoln, Santo Domingo.<br><br>🕒 <b>Horario:</b> Lunes a Sábado de 9:00 AM a 7:30 PM.<br>🛒 ¡También puedes comprar online con envío rápido!'
     },
     garantia: {
-        keywords: ['garantia', 'aseguran', 'descompone', 'fallo', 'reparacion'],
-        respuesta: '🛡️ <b>Tu compra está protegida:</b><br>• 📱 <b>Equipos Nuevos:</b> 1 año de garantía total de fábrica.<br>• ♻️ <b>Equipos Usados:</b> 3 meses de garantía en nuestra tienda para tu total tranquilidad.'
+        keywords: ['garantia', 'aseguran', 'descompone', 'fallo', 'reparacion', 'daño', 'descompuesto'],
+        respuesta: '🛡️ <b>Tu compra está protegida:</b><br>• 📱 <b>Equipos Nuevos:</b> 1 año de garantía total de fábrica.<br>• ♻️ <b>Equipos Usados:</b> 3 meses de garantía en nuestra tienda para tu total tranquilidad. Nota: No cubre daños por agua o golpes.'
     },
     pagos: {
-        keywords: ['pago', 'pagar', 'tarjeta', 'efectivo', 'transferencia', 'dolares', 'pesos'],
-        respuesta: '💳 <b>Métodos de pago aceptados:</b><br>• Efectivo (Pesos o Dólares).<br>• Transferencia bancaria (Popular, BHD, Reservas).<br>• Tarjetas de crédito/débito.<br>• Financiamiento disponible.'
+        keywords: ['pago', 'pagar', 'tarjeta', 'efectivo', 'transferencia', 'dolares', 'pesos', 'banco', 'bhd', 'popular', 'reservas'],
+        respuesta: '💳 <b>Métodos de pago aceptados:</b><br>• Efectivo (Pesos o Dólares al cambio del día).<br>• Transferencia bancaria (Popular, BHD, Banreservas).<br>• Tarjetas de crédito/débito (aplican comisiones de la red).<br>• Financiamiento disponible.'
     },
     financiamiento: {
-        keywords: ['financiamiento', 'financian', 'cuotas', 'fiado', 'prestamo', 'credito'],
-        respuesta: '💰 <b>¡Llévatelo a cuotas!</b><br>Trabajamos con las principales financieras. Requisitos básicos:<br>1️⃣ Cédula de identidad física.<br>2️⃣ Ingresos comprobables.<br>3️⃣ Buen historial de crédito.<br><br>Escríbenos por este chat diciendo <i>"Quiero financiar"</i> para evaluar tu perfil.'
+        keywords: ['financiamiento', 'financian', 'cuotas', 'fiado', 'prestamo', 'credito', 'inicial'],
+        respuesta: '💰 <b>¡Llévatelo a cuotas!</b><br>Trabajamos con las principales financieras del país. Requisitos básicos:<br>1️⃣ Cédula de identidad física (dominicana).<br>2️⃣ Ingresos comprobables o estados de cuenta.<br>3️⃣ Buen historial de crédito.<br><br>Escríbenos detallando qué equipo quieres y si cumples los requisitos para pre-evaluarte.'
+    },
+    
+    // --- NUEVAS CATEGORÍAS AGREGADAS ---
+    
+    condicion_bateria: {
+        keywords: ['bateria', 'condicion', 'porcentaje', 'vida de la bateria', 'estado', 'usados', 'grado'],
+        respuesta: '🔋 <b>Estado de nuestros equipos usados:</b><br>Todos nuestros dispositivos de exhibición y usados están categorizados como <b>Grado A</b> (condición estética impecable 9/10 o superior). La vida útil de la batería en iPhones usados se encuentra siempre entre el <b>85% y el 100%</b>. ¡Están como nuevos!'
+    },
+    accesorios: {
+        keywords: ['accesorio', 'cargador', 'cable', 'cover', 'estuche', 'mica', 'pantalla', 'audifonos', 'airpods'],
+        respuesta: '🔌 <b>Accesorios y Complementos:</b><br>¡Contamos con todo lo necesario para proteger tu inversión! Ofrecemos:<br>• Cargadores de carga rápida originales (Apple de 20W/35W y Samsung Super Fast Charging).<br>• Micas de cristal templado y fundas de alta resistencia.<br>• AirPods y audífonos inalámbricos. Si compras un teléfono hoy, ¡te llevas un 20% de descuento en accesorios!'
+    },
+    apartados: {
+        keywords: ['apartar', 'apartado', 'reservar', 'reserva', 'guardar', 'abono'],
+        respuesta: '📌 <b>Políticas de Apartado:</b><br>¿Te enamoraste de un equipo pero necesitas unos días? Puedes apartar cualquier teléfono con solo un <b>20% de su valor</b>. Te lo guardamos por un máximo de <b>15 días</b> para que pases a liquidarlo. ¡Asegura el tuyo antes de que se agote!'
+    },
+    compra_directa: {
+        keywords: ['compran', 'compras', 'vender', 'vendo', 'comprame', 'compran celulares'],
+        respuesta: '💵 <b>¿Quieres vender tu teléfono?</b><br>¡Compramos tu equipo de forma directa! Compramos iPhones (del 12 en adelante) y Samsung de gama alta. El equipo debe estar libre de bloqueos de iCloud/Google y contar con su cédula para fines de contrato de compraventas. Escríbenos qué modelo tienes y su estado para cotizar.'
+    },
+    servicio_tecnico: {
+        keywords: ['reparan', 'reparacion', 'arreglo', 'arreglar', 'pantalla rota', 'cambiar bateria', 'tecnico'],
+        respuesta: '🛠️ <b>Laboratorio Técnico CellMax:</b><br>¿Tu teléfono actual falló o se le rompió la pantalla? Contamos con servicio técnico express:<br>• Cambios de pantalla y baterías en menos de 45 minutos.<br>• Reparaciones de puerto de carga y software.<br>• Diagnóstico inicial sin costo. ¡Trae tu equipo hoy mismo!'
+    },
+    humano: {
+        keywords: ['humano', 'persona', 'asesor', 'agente', 'representante', 'vendedor', 'hablar con alguien', 'atencion al cliente'],
+        respuesta: '👤 <b>Transfiriendo a un asesor humano...</b><br>Entendido. He pausado mis respuestas automáticas. Uno de nuestros vendedores de la tienda física tomará este chat en un momento para darte una atención personalizada. ¡Por favor, no cierres la ventana!'
     }
 };
 
