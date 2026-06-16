@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CellMax | Sistema Inteligente de Ventas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <span class="logo">Cell<span>Max</span></span>
+    <ul class="nav-links">
+      <li><a href="#funcionamiento">¿Cómo funciona?</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#asistente">Asistente IA</a></li>
+      <li><a href="#faq">Preguntas Frecuentes</a></li>
+    </ul>
+    <button class="nav-cta" onclick="window.open('https://wa.me/18095550100', '_blank')"><i class="ti ti-brand-whatsapp"></i> WhatsApp</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge"><i class="ti ti-bolt"></i> Tu tienda de celulares 24/7</div>
+      <h1>El celular que buscas, disponible hoy.<span>.</span></h1>
+      <p>Equipos nuevos y usados con garantía real. Filtra nuestro catálogo, cotiza con nuestra IA y finaliza tu compra por WhatsApp de forma inmediata.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="verCatalogo()"><i class="ti ti-device-mobile"></i> Explorar Catálogo</button>
+        <button class="btn-wa" onclick="window.open('https://wa.me/18095550100', '_blank')"><i class="ti ti-brand-whatsapp"></i> Chat Directo</button>
+      </div>
+      <!-- CORRECCIÓN: Datos reales y honestos -->
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num"><i class="ti ti-refresh"></i></div>
+          <div class="stat-lbl">Catálogo Actualizado</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><i class="ti ti-message-dots"></i></div>
+          <div class="stat-lbl">Atención Rápida</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><i class="ti ti-truck"></i></div>
+          <div class="stat-lbl">Delivery Disponible</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-phones">
+      <div class="phone2"></div>
+      <div class="phone-mock">
+        <div class="phone-screen">
+          <div class="phone-icon">📱</div>
+          <div class="phone-label">📦 Nuevo · Garantía 1 año</div>
+          <div style="margin-top:8px;">
+            <div class="phone-price">$1,199</div>
+            <div class="phone-sub">iPhone 15 Pro · 256GB</div>
+          </div>
+          <div style="margin-top:16px;background:rgba(108,99,255,0.15);border-radius:12px;padding:10px;font-size:11px;color:#9b96ff;line-height:1.5;">
+            <strong style="color:#c5c2ff;">Spec rápida</strong><br/>
+            Chip A17 Pro · Cámara 48MP<br/>
+            USB-C · Dynamic Island
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUEVA SECCIÓN: ¿CÓMO FUNCIONA? -->
+<section class="section" id="funcionamiento">
+  <div class="section-inner">
+    <div class="section-label">Proceso de Compra</div>
+    <div class="section-title">Tu próximo equipo en 4 pasos simples.</div>
+    <p class="section-sub">Diseñamos un sistema ágil para que encuentres, verifiques y compres tu celular sin perder tiempo en llamadas o formularios eternos.</p>
+    
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <h3>Explora el catálogo</h3>
+        <p>Filtra por marca, precio o capacidad para encontrar los modelos exactos en stock real.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <h3>Compara opciones</h3>
+        <p>Selecciona dos equipos y analiza sus características frente a frente para tomar la mejor decisión.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <h3>Consulta al Asistente IA</h3>
+        <p>Resuelve dudas sobre disponibilidad, garantías o métodos de entrega de forma inmediata a cualquier hora.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">04</div>
+        <h3>Pide por WhatsApp</h3>
+        <p>Con un solo clic, envías el celular exacto que te interesa a nuestro chat para coordinar el pago y delivery.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Por qué elegirnos</div>
+    <div class="section-title">Todo lo que necesitas,<br/>sin complicaciones.</div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="ti ti-shield-check"></i></div>
+        <h3>Equipos garantizados</h3>
+        <p>Todos los equipos pasan por revisión técnica antes de la venta.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="ti ti-truck-delivery"></i></div>
+        <h3>Delivery disponible</h3>
+        <p>Entrega a domicilio en Santo Domingo de forma rápida y segura.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="ti ti-brand-whatsapp"></i></div>
+        <h3>Atención por WhatsApp</h3>
+        <p>Escríbenos y te respondemos en minutos. Sin formularios.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="ti ti-robot"></i></div>
+        <h3>Asistente IA 24/7</h3>
+        <p>Resuelve tus dudas a cualquier hora con nuestro chat inteligente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section class="section catalog-bg" id="catalogo">
+  <div class="section-inner">
+    <div class="section-label">Catálogo</div>
+    <div class="section-title">Encuentra tu próximo equipo.</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:8px;">
+      <p class="section-sub" style="margin:0;">Filtra por marca, precio o capacidad.</p>
+    </div>
+    <div class="filters-row">
+      <button class="filter-btn active" onclick="filtrar(this,'todos')">Todos</button>
+      <button class="filter-btn" onclick="filtrar(this,'apple')">Apple</button>
+      <button class="filter-btn" onclick="filtrar(this,'samsung')">Samsung</button>
+      <button class="filter-btn" onclick="filtrar(this,'xiaomi')">Xiaomi</button>
+      <select class="filter-select" onchange="filtrarPrecio(this.value)">
+        <option value="todos">Precio: Todos</option>
+        <option value="bajo">Menos de $700</option>
+        <option value="medio">$700 – $1,000</option>
+        <option value="alto">Más de $1,000</option>
+      </select>
+      <select class="filter-select" onchange="filtrarCapacidad(this.value)">
+        <option value="todos">Capacidad: Todas</option>
+        <option value="128">128GB</option>
+        <option value="256">256GB</option>
+        <option value="512">512GB</option>
+      </select>
+    </div>
+    <div class="catalog-grid" id="catalog-grid">
+      <!-- Cards generadas por JS con el CTA integrado abajo -->
+    </div>
+    <div id="comp-banner" style="display:none;margin-top:24px;background:rgba(108,99,255,0.1);border:1px solid rgba(108,99,255,0.3);border-radius:16px;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+      <span id="comp-txt" style="font-size:14px;color:#c5c2ff;font-weight:600;"></span>
+      <button onclick="verComparador()" style="background:#6C63FF;color:#fff;border:none;padding:10px 22px;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;">Ver comparación</button>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARADOR -->
+<section class="section" id="comparador">
+  <div class="section-inner">
+    <div class="section-label">Comparador</div>
+    <div class="section-title">Compara antes de decidir.</div>
+    <div class="comparador-box" style="overflow-x: auto;">
+      <p class="comp-hint">Selecciona dos equipos desde el catálogo para compararlos aquí.</p>
+      <table class="comp-table" id="comp-table">
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th class="hl" id="comp-h1">📱 Selecciona equipo 1</th>
+            <th class="hl" id="comp-h2">📱 Selecciona equipo 2</th>
+          </tr>
+        </thead>
+        <tbody id="comp-tbody">
+            <tr><td colspan="3" style="text-align:center;color:rgba(240,240,245,0.4);">No has seleccionado suficientes equipos.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- NUEVA SECCIÓN: PREGUNTAS FRECUENTES (AHORRO DE TIEMPO) -->
+<section class="section" id="faq">
+  <div class="section-inner">
+    <div class="section-label">Automatización</div>
+    <div class="section-title">Respuestas inmediatas.<br/>Cero pérdida de tiempo.</div>
+    <p class="section-sub">Ahorramos horas de atención manual filtrando las dudas más comunes de nuestros clientes antes de que lleguen al WhatsApp humano.</p>
+    
+    <div class="faq-grid">
+      <div class="faq-card">
+        <h4>¿Dónde están ubicados?</h4>
+        <p>Nuestra tienda principal está en la Av. 27 de Febrero, Santo Domingo. También operamos con envíos express en toda la zona metropolitana.</p>
+      </div>
+      <div class="faq-card">
+        <h4>¿Qué tipo de garantía ofrecen?</h4>
+        <p>Todos nuestros equipos están garantizados: los dispositivos nuevos cuentan con 1 año de garantía de fábrica y los usados tienen 3 meses de garantía técnica de nuestra tienda.</p>
+      </div>
+      <div class="faq-card">
+        <h4>¿Cómo funcionan los cambios de equipos?</h4>
+        <p>Recibimos tu celular actual como parte del pago. Evaluamos la marca, el modelo y el estado físico/operativo a través de WhatsApp para darte un estimado en minutos.</p>
+      </div>
+      <div class="faq-card">
+        <h4>¿Cuál es el tiempo de entrega del delivery?</h4>
+        <p>Para Santo Domingo, realizamos entregas en un promedio de 2 horas tras confirmar tu orden por WhatsApp. Los envíos al interior se coordinan mediante transporte seguro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-box">
+    <h2>¿No encontraste<br/>lo que buscabas?</h2>
+    <p>Escríbenos y te buscamos el equipo que necesitas. Atención personalizada, sin esperas.</p>
+    <div class="cta-btns">
+      <button class="btn-wa" style="font-size:16px;padding:16px 32px;" onclick="window.open('https://wa.me/18095550100', '_blank')"><i class="ti ti-brand-whatsapp"></i> Hablar por WhatsApp</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="foot-brand">
+      <span class="logo">Cell<span>Max</span></span>
+      <p>Tu tienda de celulares de confianza en Santo Domingo. Equipos nuevos y usados con garantía.</p>
+      <div class="social-links" style="margin-top:20px;">
+        <div class="social-link"><i class="ti ti-brand-instagram"></i></div>
+        <div class="social-link"><i class="ti ti-brand-facebook"></i></div>
+        <div class="social-link"><i class="ti ti-brand-tiktok"></i></div>
+        <div class="social-link"><i class="ti ti-brand-whatsapp"></i></div>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>Catálogo</h4>
+      <a href="#">iPhone</a>
+      <a href="#">Samsung</a>
+      <a href="#">Xiaomi</a>
+      <a href="#">Accesorios</a>
+    </div>
+    <div class="foot-col">
+      <h4>Tienda</h4>
+      <a href="#">Cómo comprar</a>
+      <a href="#">Delivery</a>
+      <a href="#">Garantías</a>
+      <a href="#">Cambios</a>
+    </div>
+    <div class="foot-col">
+      <h4>Contacto</h4>
+      <a href="#">Av. 27 de Febrero, SD</a>
+      <a href="#">Lun–Sáb 9am–8pm</a>
+      <a href="#">Dom 10am–5pm</a>
+      <a href="#"><i class="ti ti-brand-whatsapp" style="font-size:13px;vertical-align:-1px;margin-right:4px;"></i>+1 (809) 555-0100</a>
+    </div>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="foot-bottom">
+      <span>© 2026 CellMax. Todos los derechos reservados.</span>
+      <span>Santo Domingo, República Dominicana</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

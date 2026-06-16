@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web (Clon Visual)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <div class="avatar">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+                        alt="Mi Foto">
+                </div>
+                <div class="header-icons">
+                    <button class="icon-btn"><i class="ti ti-users-group"></i></button>
+                    <button class="icon-btn"><i class="ti ti-circle-dashed"></i></button>
+                    <button class="icon-btn"><i class="ti ti-message-dots"></i></button>
+                    <button class="icon-btn"><i class="ti ti-dots-vertical"></i></button>
+                </div>
+            </header>
+
+            <div class="search-container">
+                <div class="search-bar">
+                    <i class="ti ti-search search-icon"></i>
+                    <input type="text" placeholder="Buscar o empezar un nuevo chat">
+                </div>
+                <button class="icon-btn filter-chats"><i class="ti ti-filter"></i></button>
+            </div>
+
+            <div class="chats-list" id="chats-list">
+            </div>
+        </aside>
+
+        <main class="chat-window">
+            <header class="chat-header">
+                <div class="chat-contact-info">
+                    <div class="avatar">
+                        <img id="active-avatar" src="" alt="Contacto">
+                    </div>
+                    <div class="contact-status">
+                        <h3 id="active-name">Selecciona un chat</h3>
+                        <p id="active-state">En línea</p>
+                    </div>
+                </div>
+                <div class="header-icons">
+                    <button class="icon-btn"><i class="ti ti-video"></i></button>
+                    <button class="icon-btn"><i class="ti ti-search"></i></button>
+                    <button class="icon-btn"><i class="ti ti-dots-vertical"></i></button>
+                </div>
+            </header>
+
+            <div class="conversation-body" id="conversation-body">
+            </div>
+
+            <footer class="chat-footer">
+                <div class="footer-icons">
+                    <button class="icon-btn"><i class="ti ti-mood-smile"></i></button>
+                    <button class="icon-btn"><i class="ti ti-plus"></i></button>
+                </div>
+                <div class="input-message-box">
+                    <input type="text" id="message-input" placeholder="Escribe un mensaje aquí..." autocomplete="off">
+                </div>
+                <div class="footer-icons">
+                    <button class="icon-btn" id="send-btn"><i class="ti ti-microphone" id="mic-icon"></i></button>
+                </div>
+            </footer>
+        </main>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
